@@ -1,0 +1,439 @@
+html, body, p, h1, h2, h3, h4, ul, li {
+    margin: 0; padding: 0; 
+}
+
+ul {list-style: none;}
+a {text-decoration: none;}
+
+body { background-image: url(../images/fon.png); }
+
+/*----------------------- Header -----------------------*/
+
+header {
+	font-family: cambria;
+}
+
+header .headFlorange {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+header .headFlorange #logotip { margin: 30px; }
+header .headFlorange .zakaz { margin: 30px 60px 20px 40px;}    
+
+header .zakaz a span {
+    z-index: -1;
+    position: relative;
+    top: -55px;
+    left: 35px;
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: #d5174b;
+    color: #ffffff;
+    font: 400 25px / 0 Arial;
+    width: 18px;
+    height: 18px;
+}
+
+header .headFlorange h1 {
+    color: #d5174b;
+    font: 400 60px / 48px Cambria;
+}
+    
+header .zakaz input,
+header li input[type="text"] {
+    border-radius: 5px;
+    font-size: 24px;
+    color: #d5174b;
+    border: 1px solid #cfbfc9;   
+    background: -webkit-linear-gradient(left, #f4ecf6, #fbf9fc, #f4ecf6);
+    background: linear-gradient(to right, #f4ecf6, #fbf9fc, #f4ecf6);
+}
+    
+header .zakaz input {
+    float: left;
+    margin-top: 15px;
+	padding: 10px 35px;
+    cursor: pointer;
+}
+
+header nav {
+    min-height: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(../images/bow.png);
+    background-size: cover;
+    
+}
+    
+header ul {
+    margin-top: 45px;
+    margin-left: 300px;
+}
+
+header li  {
+    display: inline-block;
+    margin-left: 20px;    
+}
+
+header li a {
+    color: white;
+    font: 400 22px / 20px Cambria;
+}
+
+header li #product {
+    color: #7e1f95;
+}
+
+header li input[type="text"] { 
+    max-width: 260px;
+    padding: 10px 0;
+    padding-left: 60px;
+    margin-left: 20px;
+}
+
+header li input[type="text"]::-webkit-input-placeholder {
+    font-size: 24px;
+    color: #d5174b;
+    padding-left: 5px;
+}
+
+header li input[type="text"]::-moz-placeholder {
+    font-size: 24px;
+    color: #d5174b;
+    padding-left: 5px;
+}
+
+header li input[type="text"]:-ms-input-placeholder {
+    font-size: 24px;
+    color: #d5174b;
+    padding-left: 5px;
+}
+
+header li input[type="text"]::placeholder {
+    font-size: 24px;
+    color: #d5174b;
+    padding-left: 5px;
+}
+
+header li #search {
+    position: relative;
+    right: 315px;
+    top: 6px;
+}
+
+/*----------------------- Main -----------------------*/
+
+.main {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*----------------------- Filter -----------------------*/
+
+.filter {
+    width: 28%;
+    background-color: #f2e8f4;
+}
+
+.filter h3 label {
+    position: relative;
+    left: 17%;
+    display: inline;
+    cursor: pointer;
+}
+
+.filter h3 input[type="checkbox"] {
+    display: none;
+}
+
+.filter input[type="checkbox"]:checked + label:before {
+    background-image: url(../images/galka.png);
+    background-repeat: no-repeat;
+    
+} 
+
+.filter form input[type="checkbox"] {
+    float: left;
+    display: none;
+}
+
+.filter label:first-of-type {
+    margin-top: 50px;
+}
+
+.filter .category label:nth-of-type(2):before,
+.filter .category label:nth-of-type(4):before {
+    margin-top: 5px;
+}
+
+.filter label {
+    display: block;
+    color: #000000;
+    font: 300 18px / 18px GothamPro;
+    margin-top: 20px;
+}
+
+.filter form label {
+    width: 65%;
+}
+
+.filter form label:before { 
+    content: "";
+    float: left;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.filter h3 {
+    width: 100%;
+    color: #ffffff;
+    font: 400 30px / 48px Cambria;
+    background-color: #d5174b;
+    text-align: center;
+}
+
+.filter a {
+    width: 75px;
+    display: block;
+    margin: 30px 5px;
+    margin-left: 65%;
+}
+
+.filter a img {
+    float: right;
+}
+
+.fiterLeftRight {margin-left: -25%;}
+.strelkaLeftright {margin-left: 50px;}
+
+.fiterLeftRight,
+.strelkaLeftright,
+.filter {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+/*----------------------- Sale -----------------------*/
+
+.sale {
+    width: 100%;
+    margin-top: -45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+}
+
+.sale .row1,
+.sale .row2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.sale .scrolLeft,
+.sale .scrolRight {
+    position: relative;
+    cursor: pointer;
+}
+
+.sale .scrolLeft {
+    top: 45%;
+    left: 1%;
+}
+
+.sale .scrolRight {
+    top: 45%;
+    left: 90%;
+}
+
+.sale img {
+    display: block;
+}
+
+.sale .hover {
+    max-height: 390px; 
+    overflow: hidden;
+}
+
+.sale .hover h3  {
+    color: #ffffff;
+    font: 400 30px / 48px Cambria;
+    position: relative;
+    top: -170px;
+    text-align: center;
+    -webkit-transform: scale(10);
+    transform: scale(10);
+    overflow: hidden;
+}
+
+.sale .hover a {
+    display: block;
+    color: #7e1f95;
+    font: italic 18px / 48px Cambria;
+    position: relative;
+    text-align: center;
+    top: -50px;
+    background-color: white;
+    padding: 5px 0;
+}
+
+.sale .hover h3,
+.sale .hover a {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out 0.2s;
+    transition: all .3s ease-in-out 0.2s;
+}
+
+.sale .hover {
+    -webkit-transition: all .3s ease-in-out 0.2s;
+    transition: all .3s ease-in-out 0.2s;
+}
+
+.sale .hover:hover {
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(50%); 
+}
+
+.sale .hover:hover a {
+    z-index: 2;
+    opacity: .8;
+    top: -150px;
+}
+
+.sale .hover:hover h3 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+} 
+
+.sale h2 {
+    color: #d5174b;
+    font: 400 66.5px / 48px Cambria;
+    text-align: center;
+}
+.sale a {
+    color: #7e1f95;
+    font: 400 25px / 48px Cambria;
+}
+
+.sale #jewelry { margin-left: 5%; }
+.sale #accessorie { margin-right: 5%; }
+.sale .skidka h2 { margin-top: 90px; }
+.sale .skidka a { display: block; margin-top: 70px;}
+
+.sale #collection,
+.sale #salePhoto {
+    margin-top: 25px;
+}
+
+.sale #couture { margin-top: -40px; }
+.sale input[type="radio"] { margin-top: 30px;}
+    
+.sale label {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #d5174b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sale label:first-of-type {
+    margin-left: 75px;
+}
+
+.sale input[type="radio"] {
+    display: none;
+}
+
+.sale input[type="radio"]:checked + label{
+    background-color: #d5174b;
+}
+
+/*--------------------- Slider -------------------*/
+
+.hover {
+    width: 297px;
+    overflow: hidden;
+}
+
+.slide { 
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    height: 390px;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+}
+
+.sl2  {
+    top: -390px;
+    left: -296px;
+}
+
+.sl3 { 
+    top: -780px;
+    left: -592px;
+}
+.sl4 {
+    top: -1170px; 
+    left: -888px;
+}
+.sl5 {
+    top: -1560px;
+    left: -1184px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

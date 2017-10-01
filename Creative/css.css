@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------- Head -----------------------------------*/
+body {
+    background: url(images/Layer-1.png);
+}
+
+header {
+    background-image: url(images/Header.png);
+    height: 96px;
+}
+
+header ul {
+    background-color: #353533;
+    height: 44px;
+}
+
+header li, header a {
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    font: 700 12px / 36px Helvetica;
+}
+
+header a {
+    text-decoration: none;
+    padding: 4px 20px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+header a:hover {
+    background-color: #f26c4f;
+}
+
+header li:first-of-type a {
+    background-color: #f26c4f;
+    width: 369px;
+    color: white;
+    font: 400 2em / 36px Helvetica;
+    text-align: center;
+}
+/*---------------- Article --------------------------------*/
+
+article {
+    float: left;
+    width: 46.8%;
+    margin: 30px 20px 10px 11%;
+}
+
+
+article .post1 div,
+article .post2 div,
+article .post3 div {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: -110px;
+    padding-left: 30px;
+    border: 1px solid #ddd;
+}
+
+article .post1 > img,
+article .post2 > img,
+article .post3 > img {
+    width: 100%;
+} 
+
+article section div,
+aside {
+    box-shadow: 0 12px 0 -8px white, 0 13px 0 -8px #ddd, 0 22px 0 -13px white, 0 22px 0 -13px #ddd;
+}
+
+article .post1 div::before,
+article .post2 div::before,
+article .post3 div::before,
+.small div div::before {
+    content: "";
+    position: absolute;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: -16px;
+    margin-left: 40px;
+    background-color: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-right: none;
+}
+
+section a {
+    display: block;
+    position: relative;
+    bottom: 140px;
+    left: 60px;
+    width: 50px;
+    height: 50px;
+    background-color: #f26c4f;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+section .facebook img {
+    margin-left: 17px;
+    margin-top: 13px;
+}
+
+section .twiter img {
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+section h2 {
+    width: 69.8%;
+    color: #3a3e3f;
+    font: 700 30px / 34px Helvetica;
+    padding-top: 30px;
+}
+
+section data {
+    color: #aeaeae;
+    font: 400 11px / 34px Helvetica;
+}
+
+section h3 {
+    color: #f36c4f;
+    font: 700 15px / 34px Helvetica;
+}
+
+section p {
+    color: #959595;
+    font: 400 12px / 24px Helvetica;
+    width: 82%;
+    margin-bottom: 30px;
+    
+}
+
+.small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.small img {
+    width: 100%;
+}
+
+.small1, .small2 {
+    width: 44.44%;
+}
+
+.small div div {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 0 30px;
+    border: 1px solid #ddd;
+}
+
+.small div h2  {
+    width: 100%;
+    color: #3a3e3f;
+    font: 700 16px / 22px Helvetica;
+}
+
+.small div p {
+    width: 100%;
+}
+/*--------------- Aside --------------------------------*/
+aside {
+    float: right;
+    width: 23%;
+    margin: 30px 10% 0 0;
+    background-color: #ffffff;
+    padding: 0 30px;
+    border: 1px solid #ddd;
+}
+
+aside h2 {
+    color: #3a3e3f;
+    font: 700 16px / 22px Helvetica;
+    margin-top: 40px;
+}
+
+aside em {
+    color: #aeaeae;
+    font: 400 11px / 34px Helvetica;
+}
+
+aside p {
+    color: #959595;
+    font: 400 12px / 24px Helvetica;
+    font-style: italic;
+}
+
+aside input[type="email"], aside input[type="button"] {
+    display: inline-block;
+}
+
+aside input[type="email"] {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 1px 2px 0px 0.00px rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+}
+
+aside .email {
+    width: 100%;
+}
+
+aside input[type="button"] {
+    height: 40px;
+    width: 20%;
+    background: -webkit-linear-gradient(bottom, #dddddd 0%, #eeeeee 100%);
+    background: linear-gradient(0deg, #dddddd 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(90deg, #dddddd 0%, #eeeeee 100%);
+    background: linear-gradient(0deg, #dddddd 0%, #eeeeee 100%);
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 1px 0.00px #999999;
+    color: #555555;
+    font: 700 14px / 24px Helvetica;
+}
+
+aside input[type="email"] + input[type="button"] {
+    position: relative;
+    top: -49px;
+    left: 78%;
+}
+
+aside data {
+    color: #7e7e7e;
+    font: 10px / 20px Helvetica;
+}
+
+aside ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.button {    
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.button input:nth-of-type(5),
+.button input:nth-of-type(6) {
+    width: 92px;
+    margin-top: 4px;
+}
+
+/*------------------- Lab --------------------------------*/
+.lab  {
+    width: 20%;
+    float: right;
+    margin: 50px 13.5% 0 0;
+}
+
+.lab a, .lab img {
+    width: 100%;
+    
+}
+/*------------------------- Fixed -----------------------*/
+.fixed {
+    position: fixed;
+    top: 180px;
+}
+
+.fixed a {
+    display: block;
+    padding: 12px;
+    background-color: #f26c4f;
+    border-bottom: 1px solid white;
+}
+
+.fixed a:last-of-type > img {
+    margin-left: 5px;
+}
+
+/*------------------------ Footer -----------------------*/
+footer {
+    clear: both;
+    background-color: #343434;
+    padding-left: 180px;
+    padding-top: 60px;
+}
+
+footer p {
+    color: #ffffff;
+    font: 400 15px / 20px HelveticaNeue;
+    width: 40%;
+    
+}
+
+footer .in {
+    width: 45%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 7%;
+    
+}
+
+footer input[type="email"] {
+    border-radius: 3px;
+    height: 51px;
+    width: 80%;
+    margin-top: -50px;
+}
+
+footer input[type="button"] {
+    position: relative;
+    right: 15%;
+    background-color: #f16c4f;
+    border-radius: 3px;
+    height: 40px;
+    width: 12%;
+    color: #ca3c1f;
+    font: 700 14px / 24px Helvetica;
+    border: 1px solid #ca3c1f;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 30px 15px 40px 0;
+}
+
+footer ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f26c4f;
+    border-radius: 50%;
+}
+
+footer ul li a img {
+    margin: 15px;
+}
+
+footer span {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 12px / 20px HelveticaNeue;
+    padding-bottom: 40px;
+}

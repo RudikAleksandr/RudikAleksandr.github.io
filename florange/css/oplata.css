@@ -1,0 +1,327 @@
+@import "header.css";
+@import "filter.css";
+
+@font-face {
+    font-family: Rubik;
+    src: url(../font/RubikMedium.ttf);
+}
+
+html, body, p, h1, h2, h3, h4, ul, li {
+    margin: 0; padding: 0; 
+}
+
+ul {list-style: none;}
+a {text-decoration: none;}
+
+header ul li:nth-of-type(3) a {
+     border-bottom: 4px solid white;
+}
+
+body {
+    background-image: url(../images/fotoBig.png);
+    background-repeat: no-repeat;
+    background-position: right top 205px;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main .rows {
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+}
+
+.row1 {
+    margin-top: -95px;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.row1 img {
+    margin-left: 2px;
+}
+
+.row1 .tovar {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+.row1 .tovar div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.row1 h2 {
+    margin-top: 25px;
+    font-family: Cambria;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.row1 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.row1 ul {
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.row1 ul li {
+    margin-top: 20px;
+    font-family: Cambria;
+    color:  rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.row1 b {
+     display: block;
+    font-family: Cambria;
+    color: rgba(213, 23, 75, 0.8);
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;    
+}
+
+.row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.row2 .form {
+    margin-left: 5%;
+}
+
+.row2 .form label {
+    width: 50%;
+    position: relative;
+    top: -300px;
+    text-align: right;
+    display: block;
+    font-family: Cambria;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+
+.row2 .form input,
+.row2 .form textarea{
+    position: relative;
+    top: 55px;
+    left: 56%;
+    margin-bottom: 15px;
+    display: block;
+    padding-left: 10px;
+    font-size: 1em;
+    border: 2px solid #d5174b;
+    border-radius: 15px;
+    opacity: 0.6;
+    width: 323px;
+    height: 34px;
+}
+
+.row2 .form label:last-of-type,
+.row2 .form input:last-of-type{
+    margin-bottom: -2px;
+}
+
+.row2 .form textarea {
+    position: relative;
+    display: block;
+    top: 75px;
+    height: 132px;
+}
+
+.oplata {
+    width: 35%;
+    margin-top: 60px;
+    margin-left: 22%;
+}
+
+.oplata a {
+    width: 200px;
+    display: block;
+    font-family: Rubik;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background-color:  rgba(213, 23, 75, 0.87);
+    padding: 13px 0px;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+.oplata a:before {
+    content: ">";
+    color: white;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+
+.oplata .sposobOplata {
+    font-family: Cambria;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.oplata div {
+    background-color: rgba(213, 23, 75, 0.87);
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 130px;
+}
+
+.oplata span, h3 {
+    font-family: Cambria;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.oplata h3 {
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
+.oplata label {
+    font-family: Rubik;
+    color: #ffffff;
+    font-size: 18px; 
+    font-weight: 100;
+    text-align: center;
+}
+
+.oplata input[type=submit] {
+    display: block;
+    float: right;
+    font-family: Rubik;
+    color: #ffffff;
+    font-size: 28px; 
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(213, 23, 75, 0.4);
+    width: 223px;
+    height: 58px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.oplata div label,
+.oplata div input {
+    display: block;
+    text-align: left;
+}
+
+.oplata div {
+}
+
+
+.oplata input[type=radio] {
+    float: left;
+}
+
+.oplata div span {
+    float: right;
+    margin-right: 10%;
+}
+
+.points {
+    margin-left: 40%;
+    margin-top: -20px;
+    position: relative;
+    top: -20px;
+}
+
+.points ul li {
+    display: inline-block;
+    border: 3px solid #d5174b;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.points ul li:nth-of-type(3) { background-color: #d5174b }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="css/oplata.css">
+</head>
+<body>
+    <header>
+       <div class="headFlorange">
+            <a href="#" id="logotip"><img src="images/logo.png" alt="logotip"></a>
+            <div class="zakaz">
+                <input type="button" value="сделать заказ">
+                <a href="#"><span class="number">0</span><img src="images/basket.png" alt="basket"></a> 
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">о магазине</a></li>
+                <li><a href="products.html" id="product">продукция</a></li>
+                <li><a href="oplata.html">оплата</a></li>
+                <li><a href="contakt.html">контакты</a></li>
+                <li >
+                    <input type="text"  placeholder="поиск по сайту">
+                    <a href="#" id="search"><img src="images/search.png"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <div class="filter">
+            <div class="category">
+                <h3>*категория 
+                    <label onclick="filterLeftRight()">
+                        <input type="checkbox" name="checkbox">
+                        <img src="images/strelka.png" alt="strelka">
+                    </label>
+                    <script>
+                        function filterLeftRight() {
+                            var label = document.querySelector(".filter h3 label");
+                            var filter = document.querySelector(".filter");
+                            var checkbox = document.querySelector(".filter h3 input");
+
+                            if (checkbox.checked) {
+                                filter.classList.add("fiterLeftRight");
+                                label.classList.add("strelkaLeftright");
+                            }
+
+                            else {
+                                filter.classList.remove("fiterLeftRight");
+                                label.classList.remove("strelkaLeftright");
+                            }
+
+                        }
+                    </script>
+                </h3>
+                <form name="myform">
+                    <input type="checkbox"  value="Underwear" id="Underwear">
+                    <label for="Underwear">нижнее белье</label>
+                    <input type="checkbox"  value="Bijouterie" id="Bijouterie">
+                    <label for="Bijouterie">ювелирная<br> бижутерия</label>
+                    <input type="checkbox"  value="Accessories" id="Accessories">
+                    <label for="Accessories">аксессуары</label>
+                    <input type="checkbox"  value="Nightwear" id="Nightwear">
+                    <label for="Nightwear">одежда для<br>сна и отдыха</label> 
+                </form>
+                <a href="#">найти...<img src="images/arrow.png" alt="arrow"></a>
+            </div>
+            <div class="choiceStyle">
+                <h3>*выбор по стилю</h3>
+                <form name="myform">
+                    <input type="checkbox"  value="Push-Up" id="Push-Up">
+                    <label for="Push-Up">Push-Up</label>
+                    <input type="checkbox"  value="Support" id="Support">
+                    <label for="Support">Особая поддержка</label>
+                    <input type="checkbox"  value="Correction" id="Correction">
+                    <label for="Correction">Коррекция</label>
+                    <input type="checkbox"  value="G-strings" id="G-strings">
+                    <label for="G-strings">Трусики-стринги</label>
+                    <input type="checkbox"  value="slips" id="slips">
+                    <label for="slips">Трусики-слипы</label>
+                    <input type="checkbox"  value="shorts" id="shorts">
+                    <label for="shorts">Шортики</label>
+                    <input type="checkbox"  value="Body" id="Body">
+                    <label for="Body">Боди</label>
+                    <input type="checkbox"  value="T-shirt" id="T-shirt">
+                    <label for="T-shirt">Маечки</label>
+                    <input type="checkbox"  value="accessories" id="accessories">
+                    <label for>Аксессуары</label>
+                </form>
+                <a href="#">найти...<img src="images/arrow.png" alt="arrow"></a>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="row1">
+                <img src="images/fotoMin.png" alt="fotoMin">
+                <img src="images/fotoMedium.png" alt="fotoMedium">
+                <div class="tovar">
+                    <h2>Список товаров</h2>
+                    <div> 
+                        <ul>
+                            <li>Комплект балерины Melody Set S/M</li>
+                            <li>Комплект балерины Melody Set S/M</li>
+                            <li>Комплект балерины Melody Set S/M</li>
+                        </ul>
+                        <ul>
+                            <li>1 шт. x	500000 руб</li>
+                            <li>1 шт. x	500000 руб</li>
+                            <li>1 шт. x	500000 руб</li>
+                        </ul>
+                        <ul>
+                            <li>= 50 руб</li>
+                            <li>= 50 руб</li>
+                            <li>= 50 руб</li>
+                        </ul>
+                    </div>
+                    <b>всего: = 150 руб</b>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="form">
+                    <input type="text" id="name">
+                    <input type="text" id="adress">
+                    <input type="text" id="telephone">
+                    <input type="email" id="mail">
+                    <textarea id="coment"></textarea>
+                    <label for="name">Имя</label>
+                    <label for="adress">Адрес </label>
+                    <label for="telephone">Телефон </label>
+                    <label for="mail">Электронная почта </label>
+                    <label for="coment">Комментарий </label>
+                </div>
+                <div class="oplata">
+                    <span  class="sposobOplata">способ оплаты</span>
+                    <a href="#">при получении</a>
+                    <div>
+                        <h3>способ доставки</h3>
+                        <label for="radio1"><input type="radio" name="radio1" id="radio1">  самовывоз <span>бесплатно</span></label>
+                        <label for="radio2"><input type="radio" name="radio1" id="radio2"> курьером <span>бесплатно</span></label>
+                        <input type="submit" value="Заказать">
+                    </div>
+                </div>
+            </div>
+            <div class="points">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
+    
+   
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
