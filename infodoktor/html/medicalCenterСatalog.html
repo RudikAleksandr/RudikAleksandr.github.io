@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Center Catalog</title>
+    <link rel="stylesheet" href="../css/MedicalCenterСatalog.css">
+</head>
+<body>
+   
+    <!------------------------ Header ------------------------->
+    <header class="flex">
+        <img src="../images/headSearch/banner.png" alt="banner" class="banner">
+        <nav class="flex">
+           <div class="sity">
+                Ваш город <a href="#">Минск</a>
+           </div>
+            <ul class="navigate">
+                <li><a href="medicalCenter%D0%A1atalog.html">Клиники</a></li>
+                <li><a href="doctorsCatalog.html">Врачи</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Акции</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--------------------------  Search  ------------------------>
+    <div class="searchBlock flex">
+        <div class="logotip">
+            <a href="../index.html">INFODOKTOR.BY</a>
+            <p>цены. услуги. отзывы</p>
+        </div>
+        
+        <div class="search">
+            <form>
+                <input type="radio" name="radio1" id="ruslugy" checked>
+                <label for="ruslugy">ПОИСК ПО УСЛУГАМ</label>
+                <input type="radio" name="radio1" id="rklient">
+                <label for="rklient">ПОИСК ПО КЛИНИКАМ</label>
+                <input type="radio" name="radio1" id="rdoctor">
+                <label for="rdoctor">ПОИСК ПО ДОКТОРАМ</label>
+                
+                <input type="text" id="textSearch" placeholder = "Введите услугу">
+                <input type="button" value="НАЙТИ">
+                <a href="#"><img src="../images/headSearch/lupa.png" alt="lupa"></a>
+            </form>
+        </div>
+        <script>
+            var textSearch = document.getElementById("textSearch");
+            var ruslugy = document.getElementById("ruslugy");
+            var rklient = document.getElementById("rklient");
+            var rdoctor = document.getElementById("rdoctor");
+            ruslugy.onchange = function() {textSearch.placeholder = "Введите услугу"};
+            rklient.onchange = function() {textSearch.placeholder = "Введите клиента"};
+            rdoctor.onchange = function() {textSearch.placeholder = "Введите доктора"};
+        </script>
+        <a href="#" class="mobilePril">Скачать мобильное<br> приложение</a>
+    </div>
+    <form class="appointments">
+        <input type="button" value="Записаться на прием">
+    </form>
+    
+    <div class="main">
+        <!--------------------------  Medical Centers  ------------------------>
+        <div class="medicalCenters flex">
+            <h2>Медицинские Центры  <a href="#">Минск</a></h2>
+            <div class="banner3 flex">
+                <img src="../images/MedicalCenterCatalog/banner325_194.png" alt="baner">
+                <img src="../images/MedicalCenterCatalog/banner325_194.png" alt="baner">
+                <img src="../images/MedicalCenterCatalog/banner325_194.png" alt="baner">
+
+            </div>
+        </div>
+    
+        <div class="SortingAndCenter flex">
+            <!--------------------------  Sorting  ------------------------>
+            <div class="sorting">
+                <ul class="parametrSort">
+                    <li><b>Сортировать</b></li>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="">Цена</a></li>
+                    <li><a href="">Время работы</a></li>
+                </ul>
+                <div class="servicesBlock">
+                    <form>
+                        <h4>Найдено клиник: <span>627</span></h4>
+                        <div class="rayon">
+                            <b>ВАШ РАЙОН</b>
+                            <select name="selectoptions">
+                                <option value="option1">Не выбрано</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <b>ВЫБОР УСЛУГИ</b>
+                            <input type="checkbox" id="services1">
+                            <label for="services1">Услуга</label>
+                            <input type="checkbox" id="services2">
+                            <label for="services2">Услуга</label>
+                            <input type="checkbox" id="services3">
+                            <label for="services3">Услуга</label>
+                            <input type="checkbox" id="services4">
+                            <label for="services4">Услуга</label>
+                            <input type="checkbox" id="services5">
+                            <label for="services5">Услуга</label>
+                            <a href="#">ещё</a>
+                        </div>
+                        <div>
+                            <b>ВЫБОР УСЛУГИ</b>
+                            <input type="checkbox" id="services6">
+                            <label for="services6">Услуга</label>
+                            <input type="checkbox" id="services7">
+                            <label for="services7">Услуга</label>
+                            <input type="checkbox" id="services8">
+                            <label for="services8">Услуга</label>
+                            <input type="checkbox" id="services9">
+                            <label for="services9">Услуга</label>
+                            <input type="checkbox" id="services10">
+                            <label for="services10">Услуга</label>
+                        </div>
+                    </form>
+
+                </div>
+                <img src="../images/MedicalCenterCatalog/Banner321_450.png" alt="Banner321_450">   
+            </div>
+
+            <!--------------------------  List Centers  ------------------------>
+            <div class="listCenter">
+                <ul>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaRight.png" alt="StrelkaRight"></a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaLeft.png"></a></li>
+                </ul>
+                
+                <!--------------------------  Medical Center  ------------------------>
+                <div class="center">      
+                    <img src="../images/MedicalCenterCatalog/fotoCenter.png" alt="fotoCenter" class="fotoCenter">
+                    <div>
+                         <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>
+                    </div>
+                </div>
+
+                <div class="center">      
+                    <img src="../images/MedicalCenterCatalog/fotoCenter.png" alt="fotoCenter" class="fotoCenter">
+                    <div>
+                         <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>
+                    </div>
+                </div>
+                
+                <div class="center">      
+                    <img src="../images/MedicalCenterCatalog/fotoCenter.png" alt="fotoCenter" class="fotoCenter">
+                    <div>
+                         <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>
+                        <div class="price">
+                            <select name="priceOptions">
+	                            <option value="option1">Посмотреть Цены</option>
+	                            <option value="option2">Option 2</option>
+                            </select>
+                            <div class="flex">
+                                <div class="uslugys">
+                                    <b>Услуга</b>
+                                    <b>Услуга</b>
+                                    <b>Услуга</b>
+                                </div>
+                                <ul class="priceUsluga">
+                                    <span>50000</span>
+                                    <span>50000</span>
+                                    <span>50000</span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                <!--------------------------  Other Medical Center  ------------------------>
+                <div class="center" id="otherCenter1">
+                    <img src="../images/MedicalCenterCatalog/otherCenter.png" alt="fotoCenter" class="fotoCenter">
+                    <div>
+                        <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>
+                    </div>   
+                </div>
+                
+                <div class="center" id="otherCenter2">
+                    <img src="../images/MedicalCenterCatalog/otherCenter.png" alt="fotoCenter" class="fotoCenter">
+                    <div>
+                        <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>
+                        <div class="price" id="priceOtherCenter">
+                            <select name="priceOptions">
+                                   <option value="option1">Посмотреть Цены</option>
+                                    <option value="option2">Option 2</option>
+                            </select>  
+                        </div>                    
+                    </div> 
+                </div>
+                
+                <div class="center" id="otherCenter3">
+                    <div>
+                        <h3><a href="medicalCenterCard.html">Стоматология “Аналить”</a></h3>
+                        <span class="number">+375 (25) 7432123, +375 (29) 3214568</span>
+                        <div>
+                            <img src="../images/MedicalCenterCatalog/reitingCenter.png" alt="reitingCenter">
+                            <a href="#" class="comments">10</a>
+                        </div>
+                        <a href="#" class="adressCenter">Адрес медицинского центра</a>
+                        <span class="timeWork">пн-пт. 08:00 - 20:00, сб: 08:00. Вс - Выходной</span>                    
+                    </div> 
+                </div>
+                <ul>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaRight.png" alt="StrelkaRight"></a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaLeft.png"></a></li>
+                </ul>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                     the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------- Footer ------------------------------->
+    <footer>
+        <div class="questionReviews">
+            <a href="#">Задать вопрос</a>
+            <a href="#">Оставить отзыв</a>
+        </div>
+        <div class="catalogCompany flex">
+            <div class="catalog footerNav">
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="company footerNav">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="#">Раздел для партнеров</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">О проекте</a></li>
+                </ul>
+            </div>
+            <div class="supportService">
+                <span>Служба поддержки:</span>
+                <span id="number">+375 29 <b>700-00-00</b></span>
+                <a href="#"><img src="../images/footer/App-store.png" alt="App-store"></a>
+                <a href="#"><img src="../images/footer/google-play.png" alt="google-play"></a>
+                <span id="copyright">Все права защищены InfoDoKtor.by © Copyright 2012</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   

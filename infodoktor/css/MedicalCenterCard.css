@@ -1,0 +1,264 @@
+@import "importStyles/generalStyles.css";
+@import "importStyles/headSearch.css";
+@import "importStyles/footer.css";
+@import "importStyles/reviews.css";
+
+.silkaA {
+    color: #009999;
+    font: 400 12px Roboto;
+}
+
+/*-------------------------- Center Card --------------------*/
+
+.centerCard {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-preferred-size: 80%;
+    margin: 0 auto;
+    width: 74%;
+}
+
+/*-------------------------- Resalt Search --------------------*/
+
+.resaltSearch {
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.resaltSearch span {
+    color: #000000;
+    font: 400 12px Roboto;
+}
+
+.resaltSearch .strelkaLeft {
+    background-image: url(../images/MedicalCenterCard/strelka2.png);
+    background-position: center left;
+    padding-left: 20px;
+}
+
+.resaltSearch h2 {
+    color: #000000;
+    font: 600 30px OpenSans;
+    margin-top: 10px;
+}
+
+.resaltSearch h2 a {
+    text-decoration: underline;
+    position: relative;
+    top: -3px;
+}
+
+.resaltSearch h2 > a + a {
+    margin-left: 25px;
+}
+
+/*-------------------------- Contakts Block --------------------*/
+
+.contaktsBlock {
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+.contaktsBlock .contakts {
+    background-color: #ecf6f8;
+    padding: 30px 0px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.contaktsBlock .contakts img {
+    margin-left: 20px;
+}
+
+.contakts b {
+    color: #000000;
+    font: 400 20px Roboto;
+}
+
+.contakts .numbersTel {
+    -ms-flex-preferred-size: 31%;
+    width: 27%;
+    margin-left: 3%;
+}
+
+.contakts .numbersTel li {
+    color: #000000;
+    font: 400 16px OpenSans;
+    padding-left: 20px;
+}
+
+.contakts .numbersTel li:nth-of-type(2) {
+    background-image: url(../images/MedicalCenterCard/trubkaicon.png);
+    background-position: center left;
+}
+
+.contakts .numbersTel li a {
+    color: #009999;
+    font: 400 16px Roboto;
+    position: relative;
+    top: 20px;
+}
+
+.contakts .adress {
+    -ms-flex-preferred-size: 40%;
+    width: 40%;
+}
+
+.contakts .adress b {
+    background-image: url(../images/MedicalCenterCard/geoposition.png);
+    background-position: center left;
+    padding-left: 20px;
+}
+
+.contakts .adress li {
+    color: #000000;
+    font: 600 16px OpenSans;
+    margin-bottom: 25px;
+
+}
+
+.contakts .adress a {
+    color: #009999;
+    font: 400 16px Roboto;
+    text-decoration: underline;
+    position: relative;
+    top: -15px;
+}
+
+.contakts span {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 32%;
+    padding-left: 25px;
+    margin-top: 50px;
+    color: #000000;
+    font: 600 16px OpenSans;
+    background-image: url(../images/MedicalCenterCard/budilnik.png);
+    background-position: left top 5px;
+        
+}
+
+/*--------------- Contakts Block nav ------------------*/
+
+.contaktsBlock nav  {
+    padding: 10px 0;
+    background-color: #009999;
+}
+
+.contaktsBlock nav ul {
+    margin-left: 35px;
+}
+.contaktsBlock nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.contaktsBlock nav li a {
+    color: #ffffff;
+    font: 400 18px Roboto;
+}
+
+.contaktsBlock nav li:last-of-type a {
+    text-decoration: underline;
+}
+
+/*--------------- Contakts Block slider ------------------*/
+
+.slider {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    background-color: #ecf6f8;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.sliderBlock {
+    width:   90%;
+    margin: 0 auto;
+}
+
+.slider #scrolLeft,
+.slider #scrolRight {
+    position: relative;
+    background-color: rgba(0, 0, 0, .9);
+    width: 50px;
+    min-height: 250px;
+    background-position: center;
+    z-index: 1;
+}
+    
+.slider #scrolRight { 
+    float: right; 
+    background-image: url(../images/MedicalCenterCard/rightStrelka.png);
+}
+
+.slider #scrolLeft { 
+    float: left; 
+    background-image: url(../images/MedicalCenterCard/leftScroll.png);
+}
+
+.slider #blokScroll {
+    width: 300%;
+}
+        
+.slider .scroll {
+    width: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+}
+
+.slider .scroll > * {
+    -ms-flex-preferred-size: 10%;
+    width: 230px;
+    height: 145px;
+}
+
+/*--------------- Information ------------------*/
+
+.information {
+    margin-bottom: 28px;
+}
+
+.information h3 {
+    color: #000000;
+    font: 600 20px OpenSans;
+    margin-bottom: 15px;
+}
+
+.information p {
+    color: #000000;
+    font: 400 16px OpenSans;
+    margin-bottom: 30px;
+}
+
+.information .naprav + p { margin-bottom: 4px; }
+
+.information ul { margin-bottom: 15px;}
+.information ul li { margin-top: 5px; }
+.information ul li a { 
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
