@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Center Card</title>
+    <link rel="stylesheet" href="../css/MedicalCenterCard.css">
+</head>
+<body>
+   
+    <!------------------------ Header ------------------------->
+    <header class="flex">
+        <img src="../images/headSearch/banner.png" alt="banner" class="banner">
+        <nav class="flex">
+           <div class="sity">
+                Ваш город <a href="#">Минск</a>
+           </div>
+            <ul class="navigate">
+                <li><a href="#">Клиники</a></li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Акции</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--------------------------  Search  ------------------------>
+    <div class="searchBlock flex">
+        <div class="logotip">
+            <a href="#">INFODOKTOR.BY</a>
+            <p>цены. услуги. отзывы</p>
+        </div>
+        
+        <div class="search">
+            <form>
+                <input type="radio" name="radio1" id="ruslugy" checked>
+                <label for="ruslugy">ПОИСК ПО УСЛУГАМ</label>
+                <input type="radio" name="radio1" id="rklient">
+                <label for="rklient">ПОИСК ПО КЛИНИКАМ</label>
+                <input type="radio" name="radio1" id="rdoctor">
+                <label for="rdoctor">ПОИСК ПО ДОКТОРАМ</label>
+                
+                <input type="text" id="textSearch" placeholder = "Введите услугу">
+                <input type="button" value="НАЙТИ">
+                <a href="#"><img src="../images/headSearch/lupa.png" alt="lupa"></a>
+            </form>
+        </div>
+        <script>
+            var textSearch = document.getElementById("textSearch");
+            var ruslugy = document.getElementById("ruslugy");
+            var rklient = document.getElementById("rklient");
+            var rdoctor = document.getElementById("rdoctor");
+            ruslugy.onchange = function() {textSearch.placeholder = "Введите услугу"};
+            rklient.onchange = function() {textSearch.placeholder = "Введите клиента"};
+            rdoctor.onchange = function() {textSearch.placeholder = "Введите доктора"};
+        </script>
+        <a href="#" class="mobilePril">Скачать мобильное<br> приложение</a>
+    </div>
+    <form class="appointments">
+        <input type="button" value="Записаться на прием">
+    </form>
+    
+    <!--------------------------  Center Card  ------------------------>
+    <div class="centerCard flex">
+        
+        <!--------------------------  Resalt Search  ------------------------>
+        <div class="resaltSearch">
+            <a href="#" class="silkaA">Главная страница</a>
+            <a href="#" class="strelkaLeft silkaA">Результаты поиска врача по клинике</a>
+            <span class="strelkaLeft">Стоматология “А налить”</span>
+            <h2>
+                Стоматология “А налить” <img src="../images/MedicalCenterCard/reitingZvezda.png" alt="reitingZvezda">
+                <a href="#" class="silkaA">3 отзыва</a>
+                <a href="#" class="buttonA">Оставить отзыв</a>
+            </h2>
+        </div>
+        
+        <!--------------------------  Contakts Block  ------------------------>
+        <div class="contaktsBlock flex">
+            <div class="contakts flex">
+                <img src="../images/MedicalCenterCard/fotoCenter.png" alt="fotoCenter">
+                <ul class="numbersTel">
+                    <li><b>Телефоны</b></li>
+                    <li>+375 (29) 3000000</li>
+                    <li>+375 (29) 3000000</li>
+                    <li>+375 (29) 3000000</li>
+                    <li>+375 (29) 3000000</li>
+                    <li><a href="#">http://nalit’.by</a></li>
+                </ul>
+                <ul class="adress">
+                    <li><b>Адрес</b></li>
+                    <li>Минск ул. Сторожевская 8 пом. 9T</li>
+                    <li><a href="#">На карте</a></li>
+                </ul>
+                <span>пн-пт. 08:00 - 20:00,<br> сб: 08:00. Вс - Выходной</span>  
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">О клинике</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">На Карте</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!--------------------------  Slider Banner  ------------------------>
+        <div class="slider flex">
+            <div id="scrolLeft"></div>
+            <div class="sliderBlock">
+                <div class="flex" id="blokScroll">
+                    <div class="scroll flex" id="one">
+                        <img src="../images/MedicalCenterCard/slider/6F-AOtcPjco.jpg" alt="banner">
+                        <img src="../images/MedicalCenterCard/slider/8OasSoFf4Jc.jpg" alt="banner">
+                        <img src="../images/MedicalCenterCard/slider/eziIlDiWr1I.jpg" alt="banner">
+                    </div>
+                    <div class="scroll flex">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                        <img src="../images/MedicalCenterCard/slider/ROWwQZ9aiZY.jpg" alt="banner">
+                        <img src="../images/MedicalCenterCard/slider/eziIlDiWr1I.jpg" alt="banner">
+                    </div>   
+                    <div class="scroll flex">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                    </div>
+                    <div class="scroll flex">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                        <img src="../images/MedicalCenterCard/banner(326x202).png" alt="banner">
+                    </div>
+                </div>
+            </div>
+            <div id="scrolRight"></div>
+        </div>
+        <script src="../js/sliderMedicalCenterCard.js"></script>
+        
+        <!--------------------------  Information  ------------------------>
+        <div class="information">
+            <h3>Ключевая информация</h3>
+            <p>
+                “А налить” - Современная стоматология, основанная врачами с 20 летним опытом, частной практики. Упор здесь делают на хирургическую
+                стоматолгию. Врачи готовы взяться за сложные случаи имплантации.где необходимы базальные и скуловые импланты а также за сложные 
+                случаи протезирования, изготовлениебюгельных протезов и протезирование на имплантах.
+           </p>
+           <h3 class="naprav">Основные направления</h3>
+           <p>
+                В “А налить”  оказывают стоматологические услуги следующим направлениям:
+           </p>
+           <ul>
+               <li>- <a href="#" class="silkaA">терапия</a>;</li>
+               <li>- <a href="#" class="silkaA">ортопедия</a>;</li>
+               <li>- <a href="#" class="silkaA">хирургия</a>;</li>
+               <li>- <a href="#" class="silkaA"> детская стоматология</a>;</li>
+           </ul>
+           <p>
+                В стоматологии работает врач парадантолог. кроме очень тяжелых случаев парадонта, парадантических операций, здесь проводят здесь 
+                проводят процедуры по удалению грануляции с помощью уникального аппарата VECTOR - para. Действие этого аппарата предотвращает 
+                появление грануляций и останавливает парадонтический процесс.
+           </p>
+           <p>
+               Кроме того в стоматологии “А налить” оказывают услугу помощь по страховке Белгосстрах
+           </p>
+        </div>
+        
+        <!-------------------------- Reviews ------------------------>
+        <div class="reviews">
+            <div class="buttonReview">
+                <h3>Отзывы 
+                    <a href="#" class="buttonA">Оставить отзыв</a> 
+                    <a href="#" class="buttonA">Видео отзыв</a>
+                </h3>
+            </div>
+            
+            <!-------------------------- Review and Medium ------------------------>
+            <div class="reviewMedium flex">
+                <div class="Allreview">
+                   
+                    <!-------------------------- Review block ------------------------>
+                    <div class="reviewBlok flex">
+                        <div class="review">
+                            <b>Имя</b><span class="dateReview">(14 Апреля 2015)</span>
+                            <p>
+                                Хорошая стоматология. Мне чистили каналы и улаляли нерв, все очень аккуратно и 
+                                безболезненно. Лекарство заложили все четко и качественно,я доволен.
+                            </p>
+                        </div>
+                        <div class="evaluation allEvaluation">
+                            <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        </div>
+                    </div>
+                    
+                    <!-------------------------- Review block ------------------------>
+                    <div class="reviewBlok flex">
+                        <div class="review">
+                            <b>Имя</b><span class="dateReview">(14 Апреля 2015)</span>
+                            <p>
+                                Хорошая стоматология. Мне чистили каналы и улаляли нерв, все очень аккуратно и 
+                                безболезненно. Лекарство заложили все четко и качественно,я доволен.
+                            </p>
+                        </div>
+                        <div class="evaluation allEvaluation">
+                            <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        </div>
+                    </div>
+                    
+                    <!-------------------------- Review block ------------------------>
+                    <div class="reviewBlok flex">
+                        <div class="review">
+                            <b>Имя</b><span class="dateReview">(14 Апреля 2015)</span>
+                            <p>
+                                Хорошая стоматология. Мне чистили каналы и улаляли нерв, все очень аккуратно и 
+                                безболезненно. Лекарство заложили все четко и качественно,я доволен.
+                            </p>
+                        </div>
+                        <div class="evaluation allEvaluation">
+                            <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        </div>
+                    </div>
+
+                   <!-------------------------- Review block ------------------------>
+                    <div class="reviewBlok flex">
+                        <div class="review">
+                            <b>Имя</b><span class="dateReview">(14 Апреля 2015)</span>
+                            <p>
+                                Хорошая стоматология. Мне чистили каналы и улаляли нерв, все очень аккуратно и 
+                                безболезненно. Лекарство заложили все четко и качественно,я доволен.
+                            </p>
+                        </div>
+                        <div class="evaluation allEvaluation">
+                            <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        </div>
+                    </div>
+
+                    <!-------------------------- Review block ------------------------>
+                    <div class="reviewBlok flex">
+                        <div class="review">
+                            <b>Имя</b><span class="dateReview">(14 Апреля 2015)</span>
+                            <p>
+                                Хорошая стоматология. Мне чистили каналы и улаляли нерв, все очень аккуратно и 
+                                безболезненно. Лекарство заложили все четко и качественно,я доволен.
+                            </p>
+                        </div>
+                        <div class="evaluation allEvaluation">
+                            <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                            <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="load">
+                        <a href="#" class="buttonA">Загрузить еще</a>
+                    </div>
+                    
+                </div>
+                
+                <!-------------------------- Medium ------------------------>
+                <div class="medium">
+                    <b>4.0</b>
+                    <div class="Mediumevaluation allEvaluation">
+                        <span>Вежливость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        <span>Стоимость <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                        <span>Качество <img src="../images/MedicalCenterCard/reitingZvezda.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <!------------------------------- Footer ------------------------------->
+    <footer>
+        <div class="questionReviews">
+            <a href="#">Задать вопрос</a>
+            <a href="#">Оставить отзыв</a>
+        </div>
+        <div class="catalogCompany flex">
+            <div class="catalog footerNav">
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="company footerNav">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="#">Раздел для партнеров</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">О проекте</a></li>
+                </ul>
+            </div>
+            <div class="supportService">
+                <span>Служба поддержки:</span>
+                <span id="number">+375 29 <b>700-00-00</b></span>
+                <a href="#"><img src="../images/footer/App-store.png" alt="App-store"></a>
+                <a href="#"><img src="../images/footer/google-play.png" alt="google-play"></a>
+                <span id="copyright">Все права защищены InfoDoKtor.by © Copyright 2012</span>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

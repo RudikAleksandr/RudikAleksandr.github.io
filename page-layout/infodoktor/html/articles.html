@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="../css/articles.css">
+</head>
+<body>
+  
+   <!------------------------ Header ------------------------->
+    <header class="flex">
+        <img src="../images/headSearch/banner.png" alt="banner" class="banner">
+        <nav class="flex">
+           <div class="sity">
+                Ваш город <a href="#">Минск</a>
+           </div>
+            <ul class="navigate">
+                <li><a href="medicalCenter%D0%A1atalog.html">Клиники</a></li>
+                <li><a href="doctorsCatalog.html">Врачи</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Акции</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--------------------------  Search  ------------------------>
+    <div class="searchBlock flex">
+        <div class="logotip">
+            <a href="../index.html">INFODOKTOR.BY</a>
+            <p>цены. услуги. отзывы</p>
+        </div>
+        
+        <div class="search">
+            <form>
+                <input type="radio" name="radio1" id="ruslugy" checked>
+                <label for="ruslugy">ПОИСК ПО УСЛУГАМ</label>
+                <input type="radio" name="radio1" id="rklient">
+                <label for="rklient">ПОИСК ПО КЛИНИКАМ</label>
+                <input type="radio" name="radio1" id="rdoctor">
+                <label for="rdoctor">ПОИСК ПО ДОКТОРАМ</label>
+                
+                <input type="text" id="textSearch" placeholder = "Введите услугу">
+                <input type="button" value="НАЙТИ">
+                <a href="#"><img src="../images/headSearch/lupa.png" alt="lupa"></a>
+            </form>
+        </div>
+        <script>
+            var textSearch = document.getElementById("textSearch");
+            var ruslugy = document.getElementById("ruslugy");
+            var rklient = document.getElementById("rklient");
+            var rdoctor = document.getElementById("rdoctor");
+            ruslugy.onchange = function() {textSearch.placeholder = "Введите услугу"};
+            rklient.onchange = function() {textSearch.placeholder = "Введите клиента"};
+            rdoctor.onchange = function() {textSearch.placeholder = "Введите доктора"};
+        </script>
+        <a href="#" class="mobilePril">Скачать мобильное<br> приложение</a>
+    </div>
+    <form class="appointments">
+        <input type="button" value="Записаться на прием">
+    </form>
+    
+    <!--------------------------------------  Main  ---------------------------------->
+    <div class="main flex">
+        <div class="pageArticles">
+            <a href="#">Главная страница</a>
+            <span>Статьи</span>
+        </div>
+        <h2>Новсти и материалы</h2>    
+        <div class="buttonNewsMaterial flex">
+            <input type="radio" name="radio1" id="buttonMaterial" checked>
+            <label for="buttonMaterial">Материалы</label>
+            <input type="radio" name="radio1" id="buttonNews">
+            <label for="buttonNews">Новости</label>
+            
+            <!--------------------------  List button Articles  ------------------------>
+            <div class="listCenter listArticles">
+                <ul>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaRight.png" alt="StrelkaRight"></a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaLeft.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--------------------------------  Articles and Banner ------------------------------>
+        <div class="articlesBanner flex">
+            <div class="articles flex">
+               
+                <!-------------------------------- Article ------------------------------>
+                <article class="flex">
+                    <img src="../images/articles/ramkaForPhoto.png" alt="ramkaForPhoto">
+                    <div>
+                        <h3><a href="article.html">Здоровые зубы - Здоровый организм</a></h3>
+                        <span>20 июля 2016</span>
+                        <p>
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. о человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз о человеке мож-
+                            но много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. О человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз.  
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз.
+                        </p>
+                    </div>
+                </article>
+                
+                <!-------------------------------- Article ------------------------------>
+                <article class="flex">
+                    <img src="../images/articles/ramkaForPhoto.png" alt="ramkaForPhoto">
+                    <div>
+                        <h3><a href="article.html">Здоровые зубы - Здоровый организм</a></h3>
+                        <span>20 июля 2016</span>
+                        <p>
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. о человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз о человеке мож-
+                            но много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. О человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз.  
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз.
+                        </p>
+                    </div>
+                </article>
+
+                <!-------------------------------- Article ------------------------------>
+                <article class="flex">
+                    <img src="../images/articles/ramkaForPhoto.png" alt="ramkaForPhoto">
+                    <div>
+                        <h3><a href="article.html">Здоровые зубы - Здоровый организм</a></h3>
+                        <span>20 июля 2016</span>
+                        <p>
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. о человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз о человеке мож-
+                            но много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. О человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз.  
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз.
+                        </p>
+                    </div>
+                </article>
+                
+                <!-------------------------------- Article ------------------------------>
+                <article class="flex">
+                    <img src="../images/articles/ramkaForPhoto.png" alt="ramkaForPhoto">
+                    <div>
+                        <h3><a href="article.html">Здоровые зубы - Здоровый организм</a></h3>
+                        <span>20 июля 2016</span>
+                        <p>
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. о человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз о человеке мож-
+                            но много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. О человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз.  
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз.
+                        </p>
+                    </div>
+                </article>
+                
+                <!-------------------------------- Article ------------------------------>
+                <article class="flex">
+                    <img src="../images/articles/ramkaForPhoto.png" alt="ramkaForPhoto">
+                    <div>
+                        <h3><a href="article.html">Здоровые зубы - Здоровый организм</a></h3>
+                        <span>20 июля 2016</span>
+                        <p>
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. о человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз о человеке мож-
+                            но много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз. О человеке можно много рассказать, 
+                            увидев его впервые и обмолвившись парой фраз.  
+                            О человеке можно много рассказать, увидев его впервые и 
+                            обмолвившись парой фраз.
+                        </p>
+                    </div>
+                </article>
+                
+            </div>
+            <img src="../images/articles/Banner182_267.png" alt="Banner182_267" class="banner182_267">    
+        </div>
+        
+        <!--------------------------  List button Articles  ------------------------>
+        <div class="listCenter listArticles" id="listdown">
+            <ul>
+                <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaRight.png" alt="StrelkaRight"></a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#"><img src="../images/MedicalCenterCatalog/StrelkaLeft.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------------------- Footer ------------------------------->
+    <footer>
+        <div class="questionReviews">
+            <a href="#">Задать вопрос</a>
+            <a href="#">Оставить отзыв</a>
+        </div>
+        <div class="catalogCompany flex">
+            <div class="catalog footerNav">
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="company footerNav">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="#">Раздел для партнеров</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">О проекте</a></li>
+                </ul>
+            </div>
+            <div class="supportService">
+                <span>Служба поддержки:</span>
+                <span id="number">+375 29 <b>700-00-00</b></span>
+                <a href="#"><img src="../images/footer/App-store.png" alt="App-store"></a>
+                <a href="#"><img src="../images/footer/google-play.png" alt="google-play"></a>
+                <span id="copyright">Все права защищены InfoDoKtor.by © Copyright 2012</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

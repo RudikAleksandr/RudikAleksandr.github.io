@@ -1,0 +1,69 @@
+/*--------------------------- Footer ----------------------------*/
+
+footer .questionReviews {
+    background-color: #06abab;
+    padding: 8px 0; 
+    padding-left: 15%;
+}
+
+footer .questionReviews a {
+    color: #fefefe;
+    font: 600 18px / 30px OpenSans;
+    background-position: left;
+    padding: 5px 0;
+    padding-left: 37px; 
+}
+
+.questionReviews a:first-of-type {
+    background-image: url(../../images/footer/questions-.png);     
+}
+
+.questionReviews a:last-of-type {
+    background-image: url(../../images/footer/letterIcon.png);
+    margin-left: 10%;    
+}
+
+.catalogCompany {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: #21787c;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+footer .footerNav {
+    margin-left: 8%;
+}
+
+footer .footerNav h3 {
+    color: #e6ebf5;
+    font: 600 18px / 30px OpenSans;
+}
+
+footer .footerNav a {
+    color: #06bfbe;
+    font: 400 14px / 30px OpenSans;
+    text-decoration: underline;
+}
+
+footer .company {
+    margin-left: 1%;
+}
+
+footer .supportService span {
+    display: block;
+    color: #e6ebf5;
+    font: 400 16px / 25px OpenSans;
+}
+
+footer #number {
+    color: #e6ebf5;
+    font: 400 22px / 20px OpenSans;
+    margin-bottom: 20px;
+}
+
+footer #copyright {
+    color: #1d1d1d;
+    font: 400 16px / 30px OpenSans;
+    margin-top: 2px;
+}

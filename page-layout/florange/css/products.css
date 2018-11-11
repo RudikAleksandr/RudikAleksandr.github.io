@@ -1,0 +1,156 @@
+@import "header.css";
+@import "filter.css";
+
+@font-face {
+    font-family: Rubik;
+    src: url(../font/RubikMedium.ttf);
+}
+
+html, body, p, h1, h2, h3, h4, ul, li {
+    margin: 0; padding: 0; 
+}
+
+ul {list-style: none;}
+a {text-decoration: none;}
+
+#contact {
+    border-bottom: 4px solid white;
+}
+
+header ul li:nth-of-type(2) a {
+     border-bottom: 4px solid white;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.filter {
+    width: 65%;
+}
+
+/*------------------------ Tovars -------------------*/
+.tovars {
+
+}
+
+.tovars .row1 > *,
+.tovars .row2 > * {
+    width: 25%;
+    margin-top: -98px;
+}
+
+.tovars .row1,
+.tovars .row2,
+.tovars .row3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tovars .aboutTovar {
+    background-color:  #000000;
+    padding-left: 2%;
+
+}
+
+.tovars .aboutTovar h2 {
+    font-family: Rubik;
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.tovars .aboutTovar b {
+    width: 80%;
+    display: block;
+    font-family: Rubik;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.tovars .aboutTovar p {
+    width: 80%;
+    font-family: Rubik;
+    color:  #b3b3b3;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.tovars .row2 {
+    margin-top: 98px;
+}
+
+.tovars .row2 > * {
+    width: 25%;  
+    padding-left: 25px;
+    background-color: rgba(0, 0, 0, 0.07);
+    min-height: 206px;
+}
+
+.tovars .row2 > div:first-of-type {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.tovars .row2 h2 {
+    margin-top: 25px;    
+    font-family: Cambria;
+    color: #010001;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.tovars .row2  .newPrice,
+.tovars .row2  .oldPrice {
+    display: block;
+    font-family: Rubik;
+    color: #000000;
+}
+
+.tovars .row2  .newPrice {
+    margin-top: 25px;
+    font-size: 24px; 
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.tovars .row2  .oldPrice {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.tovars .row3 > * {
+    width: 25%;
+    margin-bottom: -5px;
+}
+
+.points {
+    margin-left: 40%;
+    margin-top: -20px;
+    position: relative;
+    top: -20px;
+}
+
+.points ul li {
+    display: inline-block;
+    border: 3px solid #d5174b;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.points ul li:nth-of-type(2) { background-color: #d5174b }

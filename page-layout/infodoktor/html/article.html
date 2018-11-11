@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+    
+   <!------------------------ Header ------------------------->
+    <header class="flex">
+        <img src="../images/headSearch/banner.png" alt="banner" class="banner">
+        <nav class="flex">
+           <div class="sity">
+                Ваш город <a href="#">Минск</a>
+           </div>
+            <ul class="navigate">
+                <li><a href="medicalCenter%D0%A1atalog.html">Клиники</a></li>
+                <li><a href="doctorsCatalog.html">Врачи</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Акции</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--------------------------  Search  ------------------------>
+    <div class="searchBlock flex">
+        <div class="logotip">
+            <a href="../index.html">INFODOKTOR.BY</a>
+            <p>цены. услуги. отзывы</p>
+        </div>
+        
+        <div class="search">
+            <form>
+                <input type="radio" name="radio1" id="ruslugy" checked>
+                <label for="ruslugy">ПОИСК ПО УСЛУГАМ</label>
+                <input type="radio" name="radio1" id="rklient">
+                <label for="rklient">ПОИСК ПО КЛИНИКАМ</label>
+                <input type="radio" name="radio1" id="rdoctor">
+                <label for="rdoctor">ПОИСК ПО ДОКТОРАМ</label>
+                
+                <input type="text" id="textSearch" placeholder = "Введите услугу">
+                <input type="button" value="НАЙТИ">
+                <a href="#"><img src="../images/headSearch/lupa.png" alt="lupa"></a>
+            </form>
+        </div>
+        <script>
+            var textSearch = document.getElementById("textSearch");
+            var ruslugy = document.getElementById("ruslugy");
+            var rklient = document.getElementById("rklient");
+            var rdoctor = document.getElementById("rdoctor");
+            ruslugy.onchange = function() {textSearch.placeholder = "Введите услугу"};
+            rklient.onchange = function() {textSearch.placeholder = "Введите клиента"};
+            rdoctor.onchange = function() {textSearch.placeholder = "Введите доктора"};
+        </script>
+        <a href="#" class="mobilePril">Скачать мобильное<br> приложение</a>
+    </div>
+    <form class="appointments">
+        <input type="button" value="Записаться на прием">
+    </form>
+    
+    <!-------------------------------------------  Main  ------------------------------------>
+    <div class="main flex">
+     
+       <div class="namePage" >
+            <a href="#">Главная страница</a>
+            <span>Здоровые зубы - Здоровый организм</span>
+        </div>
+        <h2>Здоровые зубы - здоровый организм</h2>
+        <div class="dateProsmotr">
+            <span class=>20 июля 2016</span>
+            <span>132</span>
+        </div>
+        
+        <div class="fotoBanner flex">
+            <img src="../images/article/bannerFotoArticle.png" alt="bannerFotoArticle" class="bigfoto">
+            <img src="../images/article/Banner.png" alt="Banner">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam consequat nisi, et egestas odio 
+            hendrerit ut. Aliquam ac erat dolor. Fusce mollis justo vitae faucibus faucibus. In facilisis imperdiet nisl ac 
+            finibus. Ut ornare justo vitae justo finibus varius. Donec laoreet pretium lectus. Sed molestie orci nunc, ac 
+            mattis mauris aliquet ac. Praesent elementum lorem eu justo aliquam maximus. Maecenas convallis 
+            quam non ex porta, sed tincidunt sem lobortis. Cras eget felis magna. Morbi dictum metus mi, a varius 
+            ante euismod at. Nullam aliquam odio in nibh pulvinar porta. In hac habitasse platea dictumst. Praesent 
+            convallis vel lorem vitae laoreet. Mauris at gravida arcu. Morbi eget euismod nunc, a viverra mi. Phasellus 
+            facilisis lectus eu risus blandit pellentesque a at nisi. Aenean a porttitor mi. Proin lacus nibh, egestas a 
+            quam quis, placerat sagittis lectus. Suspendisse et enim sem. Praesent venenatis nibh eget liberopulvinar 
+            fringilla. Duis tincidunt, justo non aliquam iaculis, felis odio molestie erat, a pulvinar dui elit quis felis. 
+            Mauris aliquam nec sapien ac molestie. Donec lacus purus, elementum sed elit vitae, luctus commodo 
+            augue. Integer aliquet mi metus, a fermentum est volutpat sed. Aliquam non volutpat tortor. Duis 
+            pulvinar risus vel nisl convallis aliquam. Suspendisse potenti. Maecenas varius turpis eget quam rhoncus 
+            placerat. Praesent lobortis nec enim vel fringilla. Sed dapibus tellus ac cursus tempor. Cras posuere quis 
+            tortor at commodo. Suspendisse potenti. Cras vel posuere mi. Maecenas volutpat vitae urna non posuere. 
+            Aenean dapibus elit cursus nisi mattis, eu pulvinar mi convallis. Suspendisse quis dignissim ligula. Donec 
+            quis metus posuere ipsum egestas blandit. Nunc non tristique arcu, a ullamcorper leo. Ut ac magna quis 
+            augue porta vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi lobortis 
+            placerat. Praesent lobortis nec enim vel fringilla. Sed dapibus tellus ac cursus tempor. Cras posuere quis 
+            tortor at commodo. Suspendisse potenti. Cras vel posuere mi. Maecenas volutpat vitae urna non posuere. 
+            Aenean dapibus elit cursus nisi mattis, eu pulvinar mi convallis. Suspendisse quis dignissim ligula. Donec 
+            quis metus posuere ipsum egestas blandit. Nunc non tristique arcu, a ullamcorper leo. Ut ac magna quis 
+            augue porta vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi lobortis 
+             Morbi lobortis 
+            placerat. Praesent lobortis nec enim vel fringilla. Sed dapibus tellus ac cursus tempor. Cras posuere quis 
+            tortor at commodo. Suspendisse potenti. Cras vel posuere mi. Maecenas volutpat vitae urna non posuere. 
+            Aenean dapibus elit cursus nisi mattis, eu pulvinar mi convallis. Suspendisse quis dignissim ligula. Donec
+        </p>
+        
+        <div class="socialNetworks">
+            <span>Понравилось ? расскажи друзьям</span>
+            <ul>
+                <li id="vk"><a href="https://vk.com" target="_blank"></a></li>
+                <li id="facebook"><a href="https://www.facebook.com" target="_blank"></a></li>
+                <li id="twitter"><a href="https://twitter.com" target="_blank"></a></li>
+                <li id="odnakl"><a href="https://ok.ru" target="_blank"></a></li> 
+            </ul>
+        </div>
+        
+        <!-----------------------------  Comments  ------------------------------>
+        <div class="comments flex">
+           
+            <!----------------------------- Comment ------------------------------>
+            <div class="comment">
+                <h3>Имя <span>(14 Апреля 2015)</span></h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularise
+                </p>
+            </div>
+            
+            <!----------------------------- Comment ------------------------------>
+            <div class="comment">
+                <h3>Имя <span>(14 Апреля 2015)</span></h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularise
+                </p>
+            </div>
+            
+            <!----------------------------- Comment ------------------------------>
+            <div class="comment">
+                <h3>Имя <span>(14 Апреля 2015)</span></h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularise
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------- Footer ------------------------------->
+    <footer>
+        <div class="questionReviews">
+            <a href="#">Задать вопрос</a>
+            <a href="#">Оставить отзыв</a>
+        </div>
+        <div class="catalogCompany flex">
+            <div class="catalog footerNav">
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="company footerNav">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="#">Раздел для партнеров</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">О проекте</a></li>
+                </ul>
+            </div>
+            <div class="supportService">
+                <span>Служба поддержки:</span>
+                <span id="number">+375 29 <b>700-00-00</b></span>
+                <a href="#"><img src="../images/footer/App-store.png" alt="App-store"></a>
+                <a href="#"><img src="../images/footer/google-play.png" alt="google-play"></a>
+                <span id="copyright">Все права защищены InfoDoKtor.by © Copyright 2012</span>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

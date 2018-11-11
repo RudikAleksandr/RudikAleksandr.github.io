@@ -1,0 +1,106 @@
+.buttonA {
+    color: #ffffff;
+    font: 600 14px OpenSans;
+    background-color: #009999;
+    padding: 9px 32px;
+    border-radius: 7px;
+    text-decoration: underline;
+}
+
+/*-------------------- Reviews ---------------------*/
+
+.reviews {
+    
+}
+
+
+
+.reviews .buttonReview h3 {
+    color: #000000;
+    font: 600 20px OpenSans;
+    margin-bottom: 30px;
+}
+
+.reviews .buttonReview a {
+    margin-left: 10%;
+}
+
+.reviews .buttonReview a + a {
+    margin-left: 4%;
+}
+
+/*------------------ Review block ---------------------*/
+
+.reviews {
+    margin-bottom: 30px;
+}
+
+.reviews .reviewBlok {
+    margin-bottom: 20px;
+}
+
+.reviewBlok  .review {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+}
+
+.reviewBlok .evaluation {
+    -ms-flex-preferred-size:;
+    flex-basis: 25%;  
+    margin-top: 20px;
+}
+
+.reviewBlok b {
+    color: #000000;
+    font: 600 18px OpenSans;
+    margin-right: 5px;
+}
+
+.reviewBlok .dateReview {
+    color: #999999;
+    font: 400 16px 'Times New Roman';
+}
+
+.reviewBlok p, 
+.reviewBlok .criterion {
+    color: #000000;
+    font: 400 16px OpenSans;
+}
+
+.reviewBlok p {
+    margin-top: 10px;
+}
+
+.allEvaluation span {
+    display: block;
+    color: #000000;
+    font: 400 16px Roboto;
+    margin-bottom: 10px;
+}
+
+.allEvaluation span img {
+    float: right;
+    margin-right: 7px;
+}
+
+.medium {
+    background-color: #ecf6f8;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 40%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding-bottom: 80px;
+}
+
+.medium b {
+    display: block;
+    color: #000000;
+    font: 400 80px Roboto;
+    text-align: center;
+}
+
+.medium span {
+    margin-left: 15px;
+}
+
+.load { text-align: center; }

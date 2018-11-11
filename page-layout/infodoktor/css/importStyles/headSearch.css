@@ -1,0 +1,183 @@
+
+/*------------------------ Header ----------------------------*/
+
+header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+header .banner { width: 100%; }
+header a { color: #ffffff; }
+
+header nav {
+    background-color: #00abaa;
+    color: #ffffff;
+    font: 600 16px / 36px OpenSans;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 7px 0;
+}
+
+header .sity {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 15%;
+}
+
+header .sity a {
+    font-weight: 400;
+    padding-right: 28px;
+    margin-left: 5px;
+    background-image: url(../../images/headSearch/geoPosition.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: underline;
+}
+
+header .sity a:before {
+    content: "";
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+header nav ul {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    margin-left: -5%;
+}
+header nav li {
+    display: inline-block;
+}
+header .navigate li {
+    margin-left: 20px;
+}
+header .login {
+    margin-left: 20px;
+}
+header .login li:first-of-type a {
+    background-image: url(../../images/headSearch/ikonHead.png);
+    background-position: left;
+    padding-left: 20px;
+}
+header .login li:last-of-type:before {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 0 10px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #ffffff;
+}
+header .login a {
+    font: 600 14px / 36px OpenSans;
+}
+
+/*--------------------------- Search ----------------------------*/
+
+.searchBlock {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.searchBlock .logotip {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding-left: 13%;
+    padding-top: 14px;
+}
+.searchBlock a {
+    display: block;
+    color: #454545;
+    font: 700 24px / 30px OpenSans;
+}
+.searchBlock p {
+    color: #727272;
+    font: 400 14px / 20px OpenSans;
+}
+.searchBlock .search {
+    padding-left: 3%;
+}
+.searchBlock form input[type="radio"] {
+    display: none;
+}
+.searchBlock form input[type="radio"]:checked + label {
+    background-color: #00abaa;
+    color: white;
+}
+
+.searchBlock form label {
+    display: inline-block;
+    color: #00abaa;
+    font: 400 12px / 20px OpenSans;
+    padding: 0 15px;
+    margin: 0;
+}
+.searchBlock form input[type="text"],
+.searchBlock form input[type="button"] {
+    display: inline-block;
+    margin: 0;
+}
+.searchBlock form input[type="text"] {
+    margin: 0;
+    width: 69%;
+    height: 39px;
+    border: 2px solid #00abaa;
+    color: #c2c6c6;
+    font: 400 14px / 36px OpenSans;
+    padding-left: 50px;
+}
+
+.searchBlock form input[type="button"] {
+    background-color: #00abaa;
+    position: relative;
+    top: -1px;
+    color: white;
+    border: 0;
+    height: 45px;
+    margin-left: -4px;
+    padding: 0px 18px;   
+}
+
+.searchBlock form a {
+    position: relative;
+    top: -40px;
+    left: 15px;
+    width: 25px;
+}
+
+.searchBlock .mobilePril {
+    width: 18%;
+    color: #009999;
+    font: 600 18px OpenSans;
+    background-image: url(../../images/headSearch/handTelephone.png);
+    background-position: left;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+
+/*--------------------------- Appointments form----------------------------*/
+
+.appointments {
+    background-color: #ecf6f8;
+    padding: 20px;
+}
+.appointments input[type="button"] {
+    width: 25%;
+    height: 47px;
+    display: block;
+    background-color: #00abaa;
+    border: 0;
+    color: #ffffff;
+    font: 600 18px / 36px OpenSans;
+    margin: 0 auto;
+    border-radius: 3px;
+}

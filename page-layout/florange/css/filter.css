@@ -1,0 +1,90 @@
+/*----------------------- Filter -----------------------*/
+
+.filter {
+    width: 28%;
+    background-color: #f2e8f4;
+}
+
+.filter h3 label {
+    position: relative;
+    left: 17%;
+    display: inline;
+    cursor: pointer;
+}
+
+.filter h3 input[type="checkbox"] {
+    display: none;
+}
+
+.filter input[type="checkbox"]:checked + label:before {
+    background-image: url(../images/galka.png);
+    background-repeat: no-repeat;
+    
+} 
+
+.filter form input[type="checkbox"] {
+    float: left;
+    display: none;
+}
+
+.filter label:first-of-type {
+    margin-top: 50px;
+}
+
+.filter .category label:nth-of-type(2):before,
+.filter .category label:nth-of-type(4):before {
+    margin-top: 5px;
+}
+
+.filter label {
+    display: block;
+    color: #000000;
+    font: 300 18px / 18px GothamPro;
+    margin-top: 20px;
+}
+
+.filter form label {
+    width: 65%;
+}
+
+.filter form label:before { 
+    content: "";
+    float: left;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.filter h3 {
+    width: 100%;
+    color: #ffffff;
+    font: 400 30px / 48px Cambria;
+    background-color: #d5174b;
+    text-align: center;
+}
+
+.filter a {
+    width: 75px;
+    display: block;
+    margin: 30px 5px;
+    margin-left: 65%;
+}
+
+.filter a img {
+    float: right;
+}
+
+.fiterLeftRight {margin-left: -25%;}
+.strelkaLeftright {margin-left: 50px;}
+
+.fiterLeftRight,
+.strelkaLeftright,
+.filter {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}

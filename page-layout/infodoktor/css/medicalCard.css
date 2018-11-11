@@ -1,0 +1,166 @@
+@import "importStyles/generalStyles.css";
+@import "importStyles/headSearch.css";
+@import "importStyles/footer.css";
+@import "importStyles/reviews.css";
+
+/*----------------------- Main ------------------*/
+.main {
+    width: 73.5%;
+    margin: 0 auto;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+/*----------------------- Result Search ------------------*/
+
+.resultSearch {
+    width: 100%;
+}
+
+.row1 {
+    margin: 25px 0;
+}
+
+.row1 a { 
+    color: #009999;
+    font: 400 12px OpenSans;
+}
+
+.row1  span {
+    color: #000000;
+    font: 400 12px OpenSans;
+}
+ 
+.row1 .strelka {
+    background-image: url("../images/doctorsCatalog/strelkaRight.png");
+    background-position: center left;
+    padding-left: 20px;
+}
+
+.row2 {
+    margin-bottom: 40px;
+}
+
+.row2 img {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.row2 .doctor {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 38%;
+    margin-left: 4%;
+}
+
+.row2 h2 {
+    color: #000000;
+    font: 600 20px OpenSans;
+}
+
+.row2 span {
+    color: #000000;
+    font: 600 12px OpenSans;
+}
+
+.row2 b {
+    display: block;
+    margin: 15px 0;
+    color: #000000;
+    font: 600 12px OpenSans;
+    background-image: url(../images/medicalCard/trubka.png);
+    background-position: center left;
+    padding-left: 20px;
+} 
+
+.row2 ul {
+    color: #000000;
+    font: 400 11px OpenSans;
+}
+
+.row2 a {
+    display: block;
+    padding: 5px 0;
+    color: #009999;
+    font: 400 11px Roboto;
+    background-image: url(../images/medicalCard/geoPosition.png);
+    background-position: center left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.row2 .ratingDoctor {
+    margin-top: 45px;
+    margin-left: -10%;
+}
+
+.row2 .ratingDoctor img {
+    float: right;
+    margin-top: -3px;
+    margin-left: 5px;
+    
+}
+
+.row2 .ratingDoctor li {
+    display: block;
+    margin-bottom: 25px;
+    color: #000000;
+    font: 400 13px Roboto;
+}
+
+.row3 {
+    padding: 2px 0;
+    background-color: #ecf6f8;
+    margin-bottom: 40px;
+}
+
+.row3 p {
+    width: 75%;
+    color: #000000;
+    font: 400 15px OpenSans;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.row3 p b {
+    color: #000000;
+    font: 600 15px OpenSans;
+}
+
+/*----------------------- Reviews ------------------*/
+
+.main .reviews {
+    margin-bottom: 80px;
+} 
+
+.reviews h3 {
+    color: #000000;
+    font: 600 28px OpenSans;
+    margin-bottom: 50px;
+}
+
+.main .reviews .buttonReview  {
+    margin-bottom: 40px;
+}
+
+.main .reviews .buttonReview a {
+    margin-left: 0;
+    padding: 10px 5%;
+
+}
+.main .reviews .buttonReview a + a {
+    margin-left: 7%;
+    padding: 10px 6%;
+}
+
+.main .reviews .dateReview {
+    margin-left: 5%;
+}
+
+.main .reviews .load a {
+    padding: 10px 7%;
+}
+
+
+
+
+

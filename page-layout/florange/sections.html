@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+    <header>
+       <div class="headFlorange">
+            <a href="#" id="logotip"><img src="images/logo.png" alt="logotip"></a>
+            <div class="zakaz">
+                <input type="button" value="сделать заказ">
+                <a href="#"><span class="number">0</span><img src="images/basket.png" alt="basket"></a> 
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">о магазине</a></li>
+                <li><a href="products.html" id="product">продукция</a></li>
+                <li><a href="oplata.html">оплата</a></li>
+                <li><a href="contakt.html">контакты</a></li>
+                <li >
+                    <input type="text"  placeholder="поиск по сайту">
+                    <a href="#" id="search"><img src="images/search.png"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <div class="filter">
+            <div class="category">
+                <h3>*категория 
+                    <label onclick="filterLeftRight()">
+                        <input type="checkbox" name="checkbox">
+                        <img src="images/strelka.png" alt="strelka">
+                    </label>
+                    <script>
+                        function filterLeftRight() {
+                            var label = document.querySelector(".filter h3 label");
+                            var filter = document.querySelector(".filter");
+                            var checkbox = document.querySelector(".filter h3 input");
+                            
+                            if (checkbox.checked) {
+                                filter.classList.add("fiterLeftRight");
+                                label.classList.add("strelkaLeftright");
+                            }
+                            
+                            else {
+                                filter.classList.remove("fiterLeftRight");
+                                label.classList.remove("strelkaLeftright");
+                            }
+                            
+                        }
+                    </script>
+                </h3>
+                <form name="myform">
+                    <input type="checkbox"  value="Underwear" id="Underwear">
+                    <label for="Underwear">нижнее белье</label>
+                    <input type="checkbox"  value="Bijouterie" id="Bijouterie">
+                    <label for="Bijouterie">ювелирная<br> бижутерия</label>
+                    <input type="checkbox"  value="Accessories" id="Accessories">
+                    <label for="Accessories">аксессуары</label>
+                    <input type="checkbox"  value="Nightwear" id="Nightwear">
+                    <label for="Nightwear">одежда для<br>сна и отдыха</label> 
+				</form>
+				<a href="#">найти...<img src="images/arrow.png" alt="arrow"></a>
+            </div>
+			<div class="choiceStyle">
+				<h3>*выбор по стилю</h3>
+				<form name="myform">
+                    <input type="checkbox"  value="Push-Up" id="Push-Up">
+                    <label for="Push-Up">Push-Up</label>
+                    <input type="checkbox"  value="Support" id="Support">
+                    <label for="Support">Особая поддержка</label>
+                    <input type="checkbox"  value="Correction" id="Correction">
+                    <label for="Correction">Коррекция</label>
+                    <input type="checkbox"  value="G-strings" id="G-strings">
+                    <label for="G-strings">Трусики-стринги</label>
+                    <input type="checkbox"  value="slips" id="slips">
+                    <label for="slips">Трусики-слипы</label>
+                    <input type="checkbox"  value="shorts" id="shorts">
+                    <label for="shorts">Шортики</label>
+                    <input type="checkbox"  value="Body" id="Body">
+                    <label for="Body">Боди</label>
+                    <input type="checkbox"  value="T-shirt" id="T-shirt">
+                    <label for="T-shirt">Маечки</label>
+                    <input type="checkbox"  value="accessories" id="accessories">
+                    <label for>Аксессуары</label>
+				</form>
+				<a href="#">найти...<img src="images/arrow.png" alt="arrow"></a>
+			</div>
+        </div>
+        
+        <!--////////////////////////// SLIDER /////////////////////////-->
+        <div class="sale">
+            <div class="scrolLeft"><img src="images/strelkaLeft.png" alt="scrolLeft"></div>
+            <div class="scrolRight"><img src="images/strelkaRight.png" alt="scrolRight"></div>
+            <div class="row1">
+               
+                <!------------------------------- Slide 1 -------------------------->
+                <div id="jewelry" class="hover">
+                    <div class="slide sl1 ">
+                        <img src="images/section/jewelry.png" alt="photo jewelry" >
+                        <h3>Аксессуары</h3>
+                        <a href="#">смотреть еще</a>                       
+                    </div>
+                    <div class="slide sl2">
+                        <img src="images/section/jewelry.png" alt="photo jewelry" >
+                        <h3>slide2</h3>
+                        <a href="#">смотреть еще</a>                       
+                    </div>
+                    <div class="slide sl3">
+                        <img src="images/section/jewelry.png" alt="photo jewelry" >
+                        <h3>slide3</h3>
+                        <a href="#">смотреть еще</a>                       
+                    </div>
+                    <div class="slide sl4">
+                        <img src="images/section/jewelry.png" alt="photo jewelry" >
+                        <h3>slide4</h3>
+                        <a href="#">смотреть еще</a>                       
+                    </div>
+                    <div class="slide sl5">
+                        <img src="images/section/jewelry.png" alt="photo jewelry" >
+                        <h3>slide5</h3>
+                        <a href="#">смотреть еще</a>                       
+                    </div>
+                </div>
+                
+                <div class="skidka">
+                    <h2>Sale</h2>
+                    <a href="#">% узнать все о скидках %</a>
+                </div>
+                
+                <!------------------------------- Slide 2 -------------------------->
+                <div id="accessorie" class="hover">
+                    <div class="slide sl1">
+                        <img src="images/section/accessories.png" alt="photo accessories" >
+                        <h3>Аксессуары</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl2">
+                        <img src="images/section/accessories.png" alt="photo accessories" >
+                        <h3>slide2</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl3">
+                        <img src="images/section/accessories.png" alt="photo accessories" >
+                        <h3>slide3</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl4">
+                        <img src="images/section/accessories.png" alt="photo accessories" >
+                        <h3>slide4</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl5">
+                        <img src="images/section/accessories.png" alt="photo accessories" >
+                        <h3>slide5</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                </div>    
+            </div>
+
+           <div class="row2">
+
+                <!------------------------------- Slide 3 -------------------------->
+                <div id="collection" class="hover">
+                    <div class="slide sl1">
+                        <img src="images/section/FlorangeCollection.png" alt="Florange Collection" >
+                        <h3>Аксессуары</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl2">
+                        <img src="images/section/FlorangeCollection.png" alt="Florange Collection" >
+                        <h3>slide2</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl3">
+                        <img src="images/section/FlorangeCollection.png" alt="Florange Collection" >
+                        <h3>slide3</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl4">
+                        <img src="images/section/FlorangeCollection.png" alt="Florange Collection" >
+                        <h3>slide4</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl5">
+                        <img src="images/section/FlorangeCollection.png" alt="Florange Collection" >
+                        <h3>slide5</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                </div>
+                <div class="scrol">
+
+                    <!------------------------------- Slide 4 ------------------------------->
+                    <div id="couture" class="hover">
+                        <div class="slide sl1">
+                            <img src="images/section/FlorangeCouture.png" alt="Florange Couture" >
+                            <h3>Аксессуары</h3>
+                            <a href="#">смотреть еще</a>
+                        </div>
+                        <div class="slide sl2">
+                            <img src="images/section/FlorangeCouture.png" alt="Florange Couture" >
+                            <h3>slide2</h3>
+                            <a href="#">смотреть еще</a>
+                        </div>
+                        <div class="slide sl3">
+                            <img src="images/section/FlorangeCouture.png" alt="Florange Couture" >
+                            <h3>slide3</h3>
+                            <a href="#">смотреть еще</a>
+                        </div>
+                        <div class="slide sl4">
+                            <img src="images/section/FlorangeCouture.png" alt="Florange Couture" >
+                            <h3>slide4</h3>
+                            <a href="#">смотреть еще</a>
+                        </div>
+                        <div class="slide sl5">
+                            <img src="images/section/FlorangeCouture.png" alt="Florange Couture" >
+                            <h3>slide5</h3>
+                            <a href="#">смотреть еще</a>
+                        </div>
+                    </div>
+                        
+                    <input type="radio" name="scrol" id="rscrol1" checked>
+                    <label for="rscrol1"></label>
+                    <input type="radio" name="scrol" id="rscrol2">
+                    <label for="rscrol2"></label>
+                    <input type="radio" name="scrol" id="rscrol3">
+                    <label for="rscrol3"></label>
+                    <input type="radio" name="scrol" id="rscrol4">
+                     <label for="rscrol4"></label>
+                    <input type="radio" name="scrol" id="rscrol5">
+                    <label for="rscrol5"></label>
+
+                </div>
+                                    
+                <!------------------------------- Slide 5 ------------------------------->
+                <div id="salePhoto" class="hover">
+                    <div class="slide sl1">
+                        <img src="images/section/sale.png" alt="sale">  
+                        <h3>Аксессуары</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl2">
+                        <img src="images/section/sale.png" alt="sale">  
+                        <h3>slide2</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl3">
+                        <img src="images/section/sale.png" alt="sale">  
+                        <h3>slide3</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl4">
+                        <img src="images/section/sale.png" alt="sale">  
+                        <h3>slide4</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                    <div class="slide sl5">
+                        <img src="images/section/sale.png" alt="sale">  
+                        <h3>slide5</h3>
+                        <a href="#">смотреть еще</a>
+                    </div>
+                </div>      
+           </div>
+           <!--///////////////////////////////////////////////////////////-->
+        </div>
+    </div>
+    
+    <script>
+        var frame = 0;
+        var RIGHT = 296;
+        var LEFT = -296;
+        var scrolLeft = document.getElementsByClassName("scrolLeft")[0];
+        var scrolRight = document.getElementsByClassName("scrolRight")[0];
+        var jewelry = document.getElementById("jewelry").children;
+        var accessorie = document.getElementById("accessorie").children;
+        var collection = document.getElementById("collection").children;
+        var couture = document.getElementById("couture").children;
+        var salePhoto = document.getElementById("salePhoto").children;
+        var flag = true;
+
+        var rscrol1 = document.getElementById("rscrol1");
+        var rscrol2 = document.getElementById("rscrol2");
+        var rscrol3 = document.getElementById("rscrol3");
+        var rscrol4 = document.getElementById("rscrol4");
+        var rscrol5 = document.getElementById("rscrol5");
+        
+        scrolRight.onclick = function() {
+            var left;
+            var styleJewelry;
+            
+            if (frame == jewelry.length - 1) {
+                for (let i = 1; frame > 0 ; frame--, i++) {
+                    jewelry[i].style.left = (LEFT * i) + "px";
+                    accessorie[i].style.left = (LEFT * i) + "px";
+                    collection[i].style.left = (LEFT * i) + "px";
+                    couture[i].style.left = (LEFT * i) + "px";
+                    salePhoto[i].style.left = (LEFT * i) + "px";
+                }
+                jewelry[0].style.left = "0";
+                accessorie[0].style.left = "0";
+                collection[0].style.left = "0";
+                couture[0].style.left = "0";
+                salePhoto[0].style.left = "0";
+                flag = false;
+            }
+
+            if (flag) {
+                for (let i = 0; i < jewelry.length; i++) {
+                    styleJewelry = getComputedStyle(jewelry[i]);
+                    left = +styleJewelry.left.slice(0, -2);
+                    left += RIGHT;
+                    jewelry[i].style.left = left + "px";
+                    accessorie[i].style.left = left + "px";
+                    collection[i].style.left = left + "px";
+                    couture[i].style.left = left + "px";
+                    salePhoto[i].style.left = left + "px";
+                }
+                ++frame;
+            }
+            flag = true;  
+            proverkaScroll(frame);
+        }
+        
+        scrolLeft.onclick = function() {
+            var left;
+            var styleJewelry;
+            
+            if (frame == 0) {
+                --frame;
+                for (let i = 0, j = jewelry.length - 1; frame < jewelry.length - 1; frame++, i++, j--) {
+                    jewelry[j].style.left = (RIGHT * i) + "px";
+                    accessorie[j].style.left = (RIGHT * i) + "px";
+                    collection[j].style.left = (RIGHT * i) + "px";
+                    couture[j].style.left = (RIGHT * i) + "px";
+                    salePhoto[j].style.left = (RIGHT * i) + "px";
+                }
+                flag = false;
+            }
+
+            if (flag) {
+                for (let i = 0; i < jewelry.length; i++) {
+                    styleJewelry = getComputedStyle(jewelry[i]);
+                    left = +styleJewelry.left.slice(0, -2);
+                    left += LEFT;
+                    jewelry[i].style.left = left + "px";
+                    accessorie[i].style.left = left + "px";
+                    collection[i].style.left = left + "px";
+                    couture[i].style.left = left + "px";
+                    salePhoto[i].style.left = left + "px";
+                }
+                --frame;
+            }
+            flag = true; 
+            proverkaScroll(frame);
+        }
+        
+        rscrol1.onchange = function() {changeScroll(0)}
+        rscrol2.onchange = function() {changeScroll(1);}
+        rscrol3.onchange = function() {changeScroll(2);}
+        rscrol4.onchange = function() {changeScroll(3);}
+        rscrol5.onchange = function() {changeScroll(4);}
+        
+        function changeScroll(number) {
+            frame = number;
+            var left = RIGHT * number;
+            for (let i = 0; i < jewelry.length; i++, left += LEFT) {
+                jewelry[i].style.left = left + "px";
+                accessorie[i].style.left = left + "px";
+                collection[i].style.left = left + "px";
+                couture[i].style.left = left + "px";
+                salePhoto[i].style.left = left + "px";
+            }
+        }
+        
+        function proverkaScroll(number) {
+            if (frame == 0) rscrol1.checked = true;
+            else if (frame == 1) rscrol2.checked = true;
+            else if (frame == 2) rscrol3.checked = true;
+            else if (frame == 3) rscrol4.checked = true;
+            else if (frame == 4) rscrol5.checked = true;
+  
+        }
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
